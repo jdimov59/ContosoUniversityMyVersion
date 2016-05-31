@@ -203,7 +203,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -289,6 +288,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\ContosoUniversity.Data\ContosoUniversity.Data.csproj">
+      <Project>{453ba1dc-d5bd-400d-b653-be508a53fbc8}</Project>
+      <Name>ContosoUniversity.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\ContosoUniversity.Models\ContosoUniversity.Models.csproj">
+      <Project>{89c095d7-6e9b-4acf-8557-f37917cf1d51}</Project>
+      <Name>ContosoUniversity.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
